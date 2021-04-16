@@ -27,6 +27,8 @@ L["weapon_markerdefi_desc"] = "Revive a las personas como MARCADO. Mantienen su 
 
 L["ttt2_paintgun_name"] = "Brocha del Pintor"
 L["ttt2_paintgun_desc"] = "Marca a los jugadores pintándolos de color."
+-- L["ttt2_markernade_name"] = "Marker's Grenade"
+-- L["ttt2_markernade_desc"] = "Marks all players in explosion radius"
 
 L["revived_by_marker"] = "Estás siendo revivido por {name}. Mantendrás tu rol pero reaparecerás marcado ¡Prepárate!"
 L["markerdefi_hold_key_to_revive"] = "Mantén [{key}] para vivir a una persona como marcada"

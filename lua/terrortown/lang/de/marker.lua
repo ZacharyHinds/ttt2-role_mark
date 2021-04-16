@@ -28,6 +28,8 @@ L["weapon_markerdefi_desc"] = "Belebt tote Spieler als markierte Spieler wieder.
 
 L["ttt2_paintgun_name"] = "Geisterbeschwörer Waffe"
 L["ttt2_paintgun_desc"] = "Markiert Spieler indem sie mit Farbe übergossen werden."
+-- L["ttt2_markernade_name"] = "Marker's Grenade"
+-- L["ttt2_markernade_desc"] = "Marks all players in explosion radius"
 
 L["revived_by_marker"] = "Du wirst von {name} wiederbelebt. Du behaältst deine Rolle, bist aber automatisch markiert. Halte dich bereit!"
 L["markerdefi_hold_key_to_revive"] = "Halte [{key}] um Spieler markiert wiederzubeleben"

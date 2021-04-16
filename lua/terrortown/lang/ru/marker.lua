@@ -27,6 +27,8 @@ L["weapon_markerdefi_desc"] = "Оживляет мёртвых людей как
 
 L["ttt2_paintgun_name"] = "Маркерное ружьё"
 L["ttt2_paintgun_desc"] = "Отмечает игроков, покрывая их цветом."
+-- L["ttt2_markernade_name"] = "Marker's Grenade"
+-- L["ttt2_markernade_desc"] = "Marks all players in explosion radius"
 
 L["revived_by_marker"] = "Вас возрождает {name}. Вы сохраните свою роль, но будете отмечены. Приготовься!"
 L["markerdefi_hold_key_to_revive"] = "Удерживайте [{key}], чтобы оживить игрока как отмеченного игрока"

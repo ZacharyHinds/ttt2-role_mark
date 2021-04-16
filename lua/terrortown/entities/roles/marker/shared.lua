@@ -131,6 +131,7 @@ if SERVER then
 
 	local function InitRoleMarker(ply)
 		ply:GiveEquipmentWeapon("weapon_ttt2_markergun")
+		ply:GiveEquipmentWeapon("weapon_ttt2_markernade")
 		ply:GiveEquipmentWeapon("weapon_ttt2_markerdefi")
 		ply:GiveArmor(60)
 		ply:GiveEquipmentItem("item_ttt_radar")
@@ -138,6 +139,7 @@ if SERVER then
 
 	local function DeinitRoleMarker(ply)
 		ply:StripWeapon("weapon_ttt2_markergun")
+		ply:StripWeapon("weapon_ttt2_markernade")
 		ply:StripWeapon("weapon_ttt2_markerdefi")
 		ply:RemoveArmor(60)
 		ply:RemoveEquipmentItem("item_ttt_radar")

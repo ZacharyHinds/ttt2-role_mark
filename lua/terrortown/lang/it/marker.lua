@@ -21,7 +21,6 @@ L["ttt_marker_player_take_no_damage"] = "Questo giocatore è un marker e non pu�
 L["ttt_marker_marked"] = "Sembra che questo giocatore sia stato marcato."
 L["ttt_marker_died"] = "Sembra che un giocatore marcato sia morto."
 L["ttt_marker_player_marked"] = "IL GIOCATORE È MARCATO"
-L["ttt_markerdefi_desc"] = "Riporta in vita i giocatori morti come marcati. Mantengono il loro ruolo."
 
 L["weapon_markerdefi_name"] = "Defibrillatore Marker"
 L["weapon_markerdefi_desc"] = "Riporta in vita i giocatori morti come marcati. Mantengono il loro ruolo."

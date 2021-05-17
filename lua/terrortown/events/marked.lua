@@ -1,8 +1,23 @@
+
+if SERVER then
+	AddCSLuaFile()
+	resource.AddFile("materials/vgui/ttt/vskin/events/marked.vmt")
+end
+
+
 if CLIENT then
 	EVENT.icon = Material("vgui/ttt/vskin/events/marked")
 	EVENT.title = "title_event_marked"
 
 	function EVENT:GetText()
+
+		local tools_string = "desc_event_marked_paintgun"
+		if self.event.tool == 1 then
+			tools_string = "desc_event_marked_revival"
+		elseif self.event.tool == 2 then
+			tools_string = "desc_event_marked_grenade"
+		end
+
 		return {
 			{
 				string = "desc_event_marked",
@@ -15,7 +30,7 @@ if CLIENT then
 				translateParams = true
 			},
 			{
-				string = self.event.isRevival and "desc_event_marked_revival" or "desc_event_marked_paintgun"
+				string = tools_string
 			}
 		}
 	end

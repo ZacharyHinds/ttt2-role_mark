@@ -12,10 +12,9 @@ local function PaintRadius(pos, painter)
   local plys = ents.FindInSphere(pos, radius)
   for i = 1, #plys do
     local ply = plys[i]
-    if not IsValid(ply) then continue end
-    if ply:IsPlayer() and ply:Alive() and not ply:IsSpec() and not ply:HasTeam(TEAM_MARKER) then
-      MARKER_DATA:SetMarkedPlayer(ply)
-    end
+    if not IsValid(ply) or not ply:IsPlayer() or not ply:Alive() or ply:IsSpec() then continue end
+    if ply:GetTeam() == TEAM_MARKER then continue end
+    MARKER_DATA:SetMarkedPlayer(painter, ply, 2)
   end
   -- MARKER_DATA:UpdateAfterChange()
 

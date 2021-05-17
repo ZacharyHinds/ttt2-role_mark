@@ -167,7 +167,7 @@ if SERVER then
 			function(p)
 				-- mark revived player
 				timer.Simple(0.1, function()
-					MARKER_DATA:SetMarkedPlayer(owner, p, true)
+					MARKER_DATA:SetMarkedPlayer(owner, p, 1)
 				end)
 			end,
 			nil,

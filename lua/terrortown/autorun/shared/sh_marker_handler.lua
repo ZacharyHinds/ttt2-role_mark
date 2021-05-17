@@ -91,7 +91,7 @@ if SERVER then
 	util.AddNetworkString("ttt2_role_marker_scoreboard")
 	util.AddNetworkString("ttt2_role_marker_corpse_update")
 
-	function MARKER_DATA:SetMarkedPlayer(marker, markee, isRevival)
+	function MARKER_DATA:SetMarkedPlayer(marker, markee, markTool)
 		if not IsValid(markee) or not markee:IsPlayer() then return end
 
 		-- show player that they are marked
@@ -107,7 +107,7 @@ if SERVER then
 
 		self:Count()
 
-		events.Trigger(EVENT_MARKED, marker, markee, isRevival)
+		events.Trigger(EVENT_MARKED, marker, markee, markTool)
 	end
 
 	function MARKER_DATA:PrepareCorpseOnDeath(ply)

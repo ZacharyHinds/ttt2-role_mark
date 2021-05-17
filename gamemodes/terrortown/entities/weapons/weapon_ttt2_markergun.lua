@@ -121,7 +121,7 @@ if SERVER then
 
 		-- send to marker that he has marked another player
 		if ply:GetTeam() ~= TEAM_MARKER then
-			MARKER_DATA:SetMarkedPlayer(attacker, ply, false)
+			MARKER_DATA:SetMarkedPlayer(attacker, ply, 0)
 		end
 
 		dmginfo:SetDamage(0)

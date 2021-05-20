@@ -12,10 +12,12 @@ if CLIENT then
 	function EVENT:GetText()
 
 		local tools_string = "desc_event_marked_paintgun"
-		if self.event.tool == 1 then
+		if self.event.markTool == 1 then 
 			tools_string = "desc_event_marked_revival"
-		elseif self.event.tool == 2 then
+		elseif self.event.markTool == 2 then 
 			tools_string = "desc_event_marked_grenade"
+		elseif self.event.markTool ~= 3 and isstring(self.event.markTool) then -- can make custom message
+			tools_string = self.event.markTool 
 		end
 
 		return {
@@ -37,7 +39,7 @@ if CLIENT then
 end
 
 if SERVER then
-	function EVENT:Trigger(marker, markee, isRevival)
+	function EVENT:Trigger(marker, markee, markTool)
 		self:AddAffectedPlayers(
 			{marker:SteamID64(), markee:SteamID64()},
 			{marker:Nick(), markee:Nick()}

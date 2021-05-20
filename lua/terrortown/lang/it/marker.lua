@@ -41,3 +41,11 @@ L["markerdefi_error_lost_target"] = "Hai perso il tuo bersaglio. Per favore ripr
 L["markerdefi_error_no_valid_ply"] = "Non puoi rianimare questo giocatore perchè non è più valido."
 L["markerdefi_error_already_reviving"] = "Non puoi rianimare questo giocatore perchè lo stanno rianimando."
 L["markerdefi_error_failed"] = "Tentativo di rianimazione fallito. Per favore riprova."
+-- L["markerdefi_error_player_alive"] = "You can't revive this player since they are already alive."
+
+--L["tooltip_marked_score"] = "Marked: {score}"
+--L["marked_score"] = "Marked:"
+--L["title_event_marked"] = "A player got marked"
+--L["desc_event_marked"] = "{marker} has marked {markee} ({mrole} / {mteam})."
+--L["desc_event_marked_paintgun"] = "They used their Marker's Gun."
+--L["desc_event_marked_revival"] = "They used their Marker's Defi."
